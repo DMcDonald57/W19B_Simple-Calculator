@@ -10,7 +10,20 @@ print("2: Subtraction")
 print("3: Multiplication")
 print("4: Subtraction")
 
-selection = input("Please enter your calculation choice:\n")
-first_num = input("Please enter your first number:\n")
-second_num = input("Please enter your second number:\n")
-print("Your Result:\n"+result)
+is_valid = False
+
+while not is_valid: 
+    selection = input("Please enter your calculation choice:\n")
+    num1 = input("Please enter your first number:\n")
+    num2 = input("Please enter your second number:\n")
+    try:
+        selection = int(selection)
+        is_valid = "1","2","3","4"
+    except ValueError:
+        print("Not valid selection")
+if selection == "1":
+    add
+
+# first_num = input("Please enter your first number:\n")
+# second_num = input("Please enter your second number:\n")
+print("Your Result:{}\n".format(result))
