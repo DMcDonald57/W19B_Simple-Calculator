@@ -16,14 +16,18 @@ while not is_valid:
     selection = input("Please enter your calculation choice:\n")
     num1 = input("Please enter your first number:\n")
     num2 = input("Please enter your second number:\n")
-    try:
+try:
         selection = int(selection)
         is_valid = "1","2","3","4"
-    except ValueError:
+except ValueError:
         print("Not valid selection")
 if selection == "1":
     add
+elif selection == "2":
+    minus
+elif selection == "3":
+    multiply
+elif selection == "4":
+    divide
 
-# first_num = input("Please enter your first number:\n")
-# second_num = input("Please enter your second number:\n")
-print("Your Result:{}\n".format(result))
+print("Your Result:\n {}".format(return(num1,num2)))
